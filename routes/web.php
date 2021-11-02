@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\Auth\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use App\Models\Address;
@@ -70,3 +71,7 @@ Route::resource('posts', 'App\Http\Controllers\PostsController');
 
 //     return "done";
 // });
+
+Auth::routes();
+
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index']);
