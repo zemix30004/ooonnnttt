@@ -30,7 +30,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="nav-link" aria-current="page" href="/posts/create">Create Post</a></li>
-                    </ul>
+                </ul>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
@@ -54,9 +54,10 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <li class="nav-link"><a href="/dashboard" class="">Dashboard</a></li>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                                document.getElementById('logout-form').submit();">Logout
+                                                document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
 
